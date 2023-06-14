@@ -4,11 +4,15 @@
     margin: 0;
 }
 h1{
-    font-size: 40px;
-    margin: 0;
-    padding-top: 2%;
+    font-size: 2em;
+    padding: 2%;
+    color: white;
 }
-.txtPromo{
+a{
+    text-decoration: none;
+    color: white;
+}
+p.txtPromo{
     padding-top: 1%;
 }
 
@@ -16,17 +20,32 @@ h2{
     margin: 0;
     padding-top: 50px;
 }
-.barrPromo{
+section#barr{
+    background-color: rgba(0, 29, 45, 1);
+    text-align: right;
+}
+ul{
+    list-style: none;
+    color: white;
+    font-size: 1em;
+    padding: 1% 0;
+}
+li{
+    display: inline;
+    padding: 1%;
+}
+section.barrPromo{
     background-color: rgba(28, 209, 176, 1);
     height: 40px;
     padding-bottom: 0;
     margin: 0;    
 }
-.barrBanner{
+section.barrBanner{
     padding-top: 0;
     background-color: rgba(0, 102, 159, 1);
     height: 100px;
     margin: 0;
+    display: flex;
 }
 h2{
     font-size: 30px;
@@ -66,39 +85,86 @@ button#btSubm{
     color: black;
     font-size: 2.5em;
     font-weight: bold;
-    width: 30%;
+    width: 40%;
     height: 50px;
     border-radius: 5px;
-    margin: 1%;
+    margin: 2%;
 }
 label{
+    align-self: center;
     color: white;
     margin: 2%;
+    text-align: left;
 }
 main{
     text-align: center;
+    position: relative;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 section#infoBody{
     display: flex;
     flex-wrap: wrap;
-    padding: 1% 8% 8%;
+    padding: 1% 8%;
     justify-content: center;
+}
+i.fa-solid{
+    color: rgba(0, 102, 159, 1);
+    position: absolute;
+    font-size: 3em;
+    top: 60vh;
+    left: 90vw;    
 }
 .campos{
     width: 22vw;
     border-radius: 5px;
     border-style: none;
+    margin: 4% 0;
 }
 input.iName{
     height: 40px;
-    
 }
+input.fec{
+    height: 40px;
+}
+
 select.sEspecie{
     height: 46px;
 }
 textarea.Desc{
-    margin-right: 5%;
+    margin-right: 2%;
     height: 40vh;
+    width: 19vw;
+    font-size: 1.2em;
+    font-weight: lighter;
+    padding: 4%;
+    
+}
+h3{
+    color: white;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+article.art{
+    text-align: left;
+    padding: 0 0 10% 0;
+    width: 120%;
+}
+article > label{
+    display: block; 
+    margin: 5% 0;   
+}
+label > input{
+    margin-right: 15%;
+    font-size: 1em;
+    font-weight: lighter;
+}
+div{
+    padding-right: 12%;
+    margin: 4% 4%;
+}
+article.tpPer{
+    padding-top: 10%;
 }
 button{
     color: white;
@@ -109,7 +175,7 @@ button{
     border: none;
 }
 footer{
-    align-items: center;
+    text-align: center;
     background-color: rgba(0, 102, 159, 1);
     color: white;
     font-size: 16px;
